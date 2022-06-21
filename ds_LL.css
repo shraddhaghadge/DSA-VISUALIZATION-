@@ -1,0 +1,255 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #fceabb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow-x: hidden;
+  transition: 0.6s;
+}
+
+.overlay-content {
+    padding-left: 20%;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #0a0a0a;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+li {float: left; text-decoration: none; padding: 5px; list-style-type: none}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.openbtn {
+  font-size: 30px;
+  margin-left: 95%;
+  margin-top: 2%;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+}
+.openbtn:hover {
+  border-radius: 150px 150px 0 0;
+  transition: ease-in-out 0.5s;
+}
+
+h1{
+  display: flex;
+  justify-content: center; 
+  font-size: 150px; 
+  font-family: 'Bebas Neue', cursive;
+  margin-top: 8%;
+
+}
+
+hr{
+  width: 40%;
+  color: #0a0a0a;
+  margin-top: -7%;  
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  font-size: large; 
+  letter-spacing: 0.5rem; 
+  text-transform: uppercase;
+  margin-top: 4%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ~~~~~~~ INIT. BTN ~~~~~~~ */
+
+  .btn {		
+    position: relative;	
+    padding: 1.4rem 4.2rem;
+    padding-right: 3.1rem;
+    font-size: 1.4rem;
+    color: black;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .btn:before, .btn:after {
+    content: '';
+    position: absolute;	
+    transition: inherit;
+    z-index: -1;
+  }
+  
+  .btn:hover {
+    color: black;
+    transition-delay: .5s;
+  }
+  
+  .btn:hover:before {
+    transition-delay: 0s;
+  }
+  
+  .btn:hover:after {
+    background: #fceabb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          transition-delay: .35s;
+  }
+  
+  /* From Top */
+  
+  .from-top:before, 
+  .from-top:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+  }
+  
+  .from-top:before {
+    bottom: 0;	
+    border: 1px solid #f8b500;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .from-top:after {
+    top: 0;
+    height: 0;
+  }
+  
+  .from-top:hover:before,
+  .from-top:hover:after {
+    height: 100%;
+  }
+  
+  /* From Left */
+  
+  .from-left:before, 
+  .from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+  }
+  
+  .from-left:before {
+    right: 0;
+    border: 1px solid #f8b500;
+    border-left: 0;
+    border-right: 0;	
+  }
+  
+  .from-left:after {
+    left: 0;
+  }
+  
+  .from-left:hover:before,
+  .from-left:hover:after {
+    width: 100%;
+  }
+  
+  /* From Right */
+  
+  .from-right:before, 
+  .from-right:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+  }
+  
+  .from-right:before {
+    left: 0;
+    border: 1px solid #f8b500;
+    border-left: 0;
+    border-right: 0;	
+  }
+  
+  .from-right:after {
+    right: 0;
+  }
+  
+  .from-right:hover:before,
+  .from-right:hover:after {
+    width: 100%;
+  }
+  
+  
+  /* From Bottom */
+  
+  .from-bottom:before, 
+  .from-bottom:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+  }
+  
+  .from-bottom:before {
+    top: 0;	
+    border: 1px solid #f8b500;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .from-bottom:after {
+    bottom: 0;
+    height: 0;
+  }
+  
+  .from-bottom:hover:before,
+  .from-bottom:hover:after {
+    height: 100%;
+  }
+  
+  
+  /* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+    
+  div {margin-bottom: 3rem;}
+  div:last-child {margin-bottom: 0;}

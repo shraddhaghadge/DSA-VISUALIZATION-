@@ -1,0 +1,121 @@
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  background-color: #e86a32;      
+  overflow-x: hidden;
+    transition: 0.6s;
+  }
+  
+  .overlay-content {
+      padding-left: 20%;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; /* 187.5% */
+  }
+  
+  .overlay a {
+    padding: 8px;/* 50% */
+    text-decoration: none;
+    font-size: 36px; /* 225% */
+    color: #0a0a0a;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px; /* 125% */
+    right: 45px; /* 281% */
+    font-size: 60px; /* 375% */
+  }
+  li {float: left; text-decoration: none; padding: 5px; list-style-type: none}
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+  .openbtn {
+    font-size: 30px;
+    margin-left: 95%;
+    margin-top: 2%;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+  }
+  .openbtn:hover {
+    border-radius: 150px 150px 0 0;
+    transition: ease-in-out 0.5s;
+  }
+  
+  h1{
+    display: flex;
+    justify-content: center; 
+    font-size: 200px; 
+    font-family: 'Bebas Neue', cursive;
+
+    margin-top: 8%;
+  
+  }
+  
+  hr{
+    width: 40%;
+    color: #0a0a0a;
+    margin-top: -7%;  
+  }
+  
+  p{
+    display: flex;
+    justify-content: center;
+    font-size: x-large; 
+    letter-spacing: 0.5rem; 
+    text-transform: uppercase;
+    margin-top: 4%;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    /* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+    
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+      
+    div {margin-bottom: 3rem;}
+    div:last-child {margin-bottom: 0;}
+  
+   
+  
+  
+  
+  

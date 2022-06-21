@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORT | REAL EAMPLE</title>
+
+    <link rel="stylesheet" href="/Algo/Sorting/REAL LIFE/sort_real.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<body>
+    <!--
+            <div class="box">
+        <div class="add_contact">
+            <section class="add-to-contact">
+                <h2>
+                    Add to contact
+                    <button class="save-btn">Save</button>
+                </h2>
+            </section>
+            <section style="display: block; background-color: #5f6368;">
+                <img class="contact-img" src="/Images/contact.png" alt="">
+                <input type="text" class="fname" placeholder=" First name"> <br>
+                <input type="text" class="lname" placeholder=" Last name"> <br> 
+
+                <img class="phone-icon" src="/Images/phone-icon-removebg-preview.png" alt="">
+                <input type="text" class="phone-no" placeholder="Phone">
+                <br>
+                <input type="text">
+            </section>
+        </div>
+        <img class="phone" src="/Images/phone-removebg-preview.png" alt="">
+
+    </div>
+
+    
+ </div>   -->
+    <div style="display: flex;">
+        <div style="opacity: 0;" id="add-contact">
+            <div id="part2">
+                <img class="smart-phone1" src="/Images/phone-removebg-preview.png" alt="">
+                <section style="background-color: #444444; width: 46%; margin-top: -102%; border-radius: 2.1%; margin-left: 51%; display: flex;">
+                    <h2>
+                        Add to contact
+                    </h2>
+                    
+                    <button onclick="save()" class="save-btn">
+                        Save
+                    </button>
+                </section>
+            </div>
+
+            
+            <section id="det" class="details">
+                <img class="contact-img" src="/Images/contact.png" alt="">
+                <input type="text" id="firstName" class="fname" placeholder="First name">
+                <br>
+                <input type="text" id="lastName" class="lname" placeholder="Last name">
+                <br>
+
+                <img class="phone-icon" src="/Images/phone-icon-removebg-preview.png" alt="">
+                <input  id="phoneNO" class="phone-no" >
+                <br>
+            </section>
+        </div>
+
+        <div id="contact-list">
+            <div class="p2">
+                <h1></h1> </div>
+            <img class="smart-phone2" src="/Images/phone-removebg-preview.png" alt="">
+            <button class="btn2" onclick="createNewContact()">
+                <img width="9%" style="padding-top: 6%" src="/Images/add new contact.png" alt=""> 
+                <h4>Create new contact</h4>
+            </button>
+
+            <p id="justName">
+
+            </p>
+            <!--             <input id="justFirstName" type="text">
+            <input id="justLastName" type="text">
+ -->
+        </div>
+
+
+    </div>
+<p id="phn"></p>
+
+<script>
+    document.getElementById("phn").innerHTML = Math.floor(Math.random() * 9000000000)+1000000000;
+    </script>
+
+
+
+
+
+
+    <script src="/Algo/Sorting/REAL LIFE/sort_real.js"></script>
+</body>
+</html>

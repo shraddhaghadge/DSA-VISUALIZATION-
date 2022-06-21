@@ -1,0 +1,424 @@
+body{
+  background-color: #f8f0dd;
+}  
+
+h1{
+  margin-top: -5%;
+    display: flex;
+    justify-content: center; 
+    font-size: 75px; 
+    font-family: 'Bebas Neue', cursive;
+  
+  }
+#selecltH2{
+  margin-left: 50%;
+}
+.insertH2{
+  margin-top: -100%;
+}
+.bubbleH2{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+  /* ______________________________SELECTION SORT DETAILS______________________ */
+  
+  .selctInfo{
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    padding-top: 1.5%; 
+    padding-bottom: 1.5%; 
+    margin-left: 6%;
+    margin-top: -1.4%;
+    width: 80%; 
+    height: 30%; 
+    border: solid 0.01rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .colorLavender{
+    margin-top: -0.3%;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(205, 177, 241);
+  border-radius: 0.6rem;
+  }
+  
+.colorRed{
+  margin-top: -0.3%;
+  margin-left: 3%;
+  width: 30px;
+  height: 30px;
+  background-color: #DA1212;
+  border-radius: 0.6rem;
+}
+.colorBlue{
+  margin-top: -0.3%;
+  margin-left: 3%;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(24, 190, 255);
+  border-radius: 0.6rem;
+}
+
+.colorGreen{
+  margin-top: -0.3%;
+  margin-left: 3%;
+  width: 30px;
+  height: 30px;
+  background-color:rgb(49, 226, 13) ;
+  border-radius: 0.6rem;
+}
+
+.colorNavyBlue{
+  margin-top: -0.3%;
+  margin-left: 3%;
+  width: 30px;
+  height: 30px;
+  background-color: #00008b;
+  border-radius: 0.6rem;
+
+}
+  /* ______________________________INSERTION SORT DETAILS______________________ */
+  
+  .insertInfo{
+    display: flex; 
+    justify-content: center; 
+    padding-top: 1.5%; 
+    padding-bottom: 1.5%; 
+    margin-left: 10%;
+    margin-top: -4.9%;
+    width: 80%; 
+    height: 30%; 
+    border: solid 0.01rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+  /* ______________________________BUBBLE SORT DETAILS______________________ */
+
+  .bubbleInfo{
+    display: flex; 
+    justify-content: center; 
+    padding-top: 1.5%; 
+    padding-bottom: 1.5%; 
+    margin-left: 10%;
+    margin-top: -4.9%;
+    width: 80%; 
+    height: 30%; 
+    border: solid 0.01rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+    .colorYellow{
+    margin-top: -0.3%;
+    margin-left: 3%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffff00;
+    border-radius: 0.6rem;
+  }
+
+/*___________________Selection INFORMATION_________________*/
+.select-modal-btn{
+  padding: 1.8%;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 86%;
+  margin-top: -4.7%;
+  border: 0.01rem solid;
+  border-radius: 1rem;
+  background-color: #f8f0dd;
+  
+}
+
+.select-modal-bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.select-bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.select-modal{
+  background-color: #e9e7e0;
+  width:30%;
+  height: 70%;
+  border: 0.01rem solid;
+  border-radius: 0.8rem;
+  padding: 2%;
+}
+
+.select-modal-header{
+  margin-top: -5%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.01rem solid;
+}
+
+.select-modal-close{
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 3%;
+}
+
+.select-modal-body{
+  padding-top: 2%;
+}
+
+/*___________________ INSERTION INFORMATION_________________*/
+/* .insert-modal-btn{
+  padding: 1.8%;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 86%;
+  margin-top: -4.7%;
+  border: 0.01rem solid;
+  border-radius: 1rem;
+  background-color: #f8f0dd;
+}
+
+.insert-modal-bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.insert-bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.insert-modal{
+  background-color: #e9e7e0;
+  width:30%;
+  height: 70%;
+  border: 0.01rem solid;
+  border-radius: 0.8rem;
+  padding: 2%;
+}
+
+.insert-modal-header{
+  margin-top: -5%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.01rem solid;
+}
+
+.insert-modal-close{
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 3%;
+}
+
+.insert-modal-body{
+  padding-top: 2%;
+} */
+
+
+/*____________________SORING BARS________________________ */
+
+.array_container{
+  
+    height: 100px;
+    margin-left: 6%;
+    
+    width: 650px;
+    height: 384px;
+    position: relative;
+  
+  }
+  
+  .bar{
+    color: red;
+    width: 4.1%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(205, 177, 241);
+    transition: 0.2s all ease;
+  }
+  
+  .bar_info{
+    position: absolute;
+    top: -24px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  /* LAST BUTTONS */
+  .btn {	
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+    position: relative;	
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2.5%;
+    padding-left: 3.5rem;
+    color: black;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .btn:before, .btn:after {
+    content: '';
+    position: absolute;	
+    transition: inherit;
+    z-index: -1;
+  }
+  
+  .btn:hover {
+    color: black;
+    transition-delay: .5s;
+  }
+  
+  .btn:hover:before {
+    transition-delay: 0s;
+  }
+  
+  .btn:hover:after {
+    background: #EECDA3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            transition-delay: .35s;
+  }
+  
+  /* From Top */
+  
+  .from-top:before, 
+  .from-top:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+  }
+  
+  .from-top:before {
+    bottom: 0;	
+    border: 1px solid #EF629F;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .from-top:after {
+    top: 0;
+    height: 0;
+  }
+  
+  .from-top:hover:before,
+  .from-top:hover:after {
+    height: 100%;
+  }
+  
+  /* From Left */
+  
+  .from-left:before, 
+  .from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+  }
+  
+  .from-left:before {
+    right: 0;
+    border: 1px solid #EF629F;
+    border-left: 0;
+    border-right: 0;	
+  }
+  
+  .from-left:after {
+    left: 0;
+  }
+  
+  .from-left:hover:before,
+  .from-left:hover:after {
+    width: 100%;
+  }
+  
+  /* From Right */
+  
+  .from-right:before, 
+  .from-right:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+  }
+  
+  .from-right:before {
+    left: 0;
+    border: 1px solid #EF629F;
+    border-left: 0;
+    border-right: 0;	
+  }
+  
+  .from-right:after {
+    right: 0;
+  }
+  
+  .from-right:hover:before,
+  .from-right:hover:after {
+    width: 100%;
+  }
+  
+  
+  /* From Bottom */
+  
+  .from-bottom:before, 
+  .from-bottom:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+  }
+  
+  .from-bottom:before {
+    top: 0;	
+    border: 1px solid #EF629F;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .from-bottom:after {
+    bottom: 0;
+    height: 0;
+  }
+  
+  .from-bottom:hover:before,
+  .from-bottom:hover:after {
+    height: 100%;
+  }
+
+  
+  

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="/Algo/Sorting/VISUALIZE/sort_viz.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <a href="/Algo/Sorting/algo_sort.html">
+      <img width="3.5%" src="/Images/back-arrow-icon-9.jpg" alt="">
+    </a>
+
+  
+      <h1>Sorting Visualizer</h1>
+      <h2 style="margin-left: 45%; margin-top: -3.5%;" id="selectH2">
+        Selection Sort
+      </h2>
+      <h2 style="margin-left: 45%; margin-top: -3.1%;" id="insertH2">
+        Insertion Sort
+      </h2>
+      <h2 style="margin-left: 45%; margin-top: -3.1%;" id="bubbleH2">
+        Bubble Sort
+      </h2>
+
+
+      <!-- _____________________ MORE INFO_______________________-->
+
+      <section class="selctInfo"  id="selectOpen">
+        <div class="colorLavender"></div>: Unsorted bars.
+        <div class="colorRed">  </div>: Comparing two bars. 
+        <div class="colorBlue"></div>: Visited bars.
+        <div class="colorGreen"></div>: Sorted bars.
+        <div class="colorNavyBlue"></div>: Position of next sorted bar. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </section>
+      <button id="select-modal-btn" class="select-modal-btn">
+        S-KNOW MORE</button>
+
+      <div class="select-modal-bg">
+        <div class="select-modal">
+          <div class="select-modal-header">
+            <h2>SELECTION SORT</h2>
+            <span class="select-modal-close">&times;</span>
+          </div>
+          <div class="select-modal-body">
+            he selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. br The algorithm maintains two subarrays in a given array.
+            1) The subarray which is already sorted. 
+            2) Remaining subarray which is unsorted.
+            In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.            <br>
+            <h3>
+              TIME COMPLEXITY
+            </h3>
+            <p style="font-size: large;">
+              BEST: Ω(n <sup>^2</sup> )
+              <br><br>
+              WORST: O(n<sup>^2</sup>)
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <section class="insertInfo"  id="insertOpen">
+        <div class="colorLavender"></div>: Unsorted bars.
+        <div class="colorGreen"></div>: Sorted bars.
+        <div class="colorNavyBlue"></div>: Position of next sorted bar. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </section>
+
+      <section class="bubbleInfo"  id="bubbleOpen">
+        <div class="colorLavender"></div>: Unsorted bars.
+        <div class="colorYellow"></div>: Visited bars.
+        <div class="colorRed">  </div>: Comparing two bars. 
+        <div class="colorGreen"></div>: Sorted bars. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </section>
+
+
+
+
+    <div class="array_container"></div>
+    
+    <ul style="display: flex; margin-left: 0.5%;  margin-top: 1%;">
+      <a style="text-decoration: none; font-size: large;" class="btn from-top genereteBtn " onclick="generate(), generateArray()">Generate New Array</a>
+      <a style="text-decoration: none;font-size: large;" class="btn from-left sort_1" id="selecInfo" onclick="selectionSort(), disable(), selecInfo()">Selection Sort</a>
+      <a style="text-decoration: none;font-size: large;" class="btn from-right sort_2" id="insertInfo" onclick=" insertionSort(), disable(),myFunction1() , insertInfo()" >Insertion Sort</a>
+      <a style="text-decoration: none;font-size: large;" class="btn from-bottom sort_3" onclick="bubbleSort(), disable(), bubbleInfo()">Bubble Sort</a>
+      <!--<a style="text-decoration: none; font-size: x-large;" class="btn from-top" >Merge Sort</a>-->
+    </ul>
+
+
+    
+    <script src="/Algo/Sorting/VISUALIZE/sort_viz.js" charset="utf-8"></script>
+  </body>
+</html>
